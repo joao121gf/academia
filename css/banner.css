@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* font-family: 'Roboto Slab', serif; */
 
+:root {
+    --preto: #0D0D0D;
+    --vermelho: #911717;
+    --secondRed: #BF0413;
+    --bege: #D9C6B0;
+    --maisClaro: #FEE8DA;
+}
+
 body {
     background-color: aliceblue;
     font-family: 'Roboto Slab', serif;
@@ -13,8 +21,8 @@ body {
 
 .container-home{
     width: 100%;
-    height: 650px;
-    background-image: url(../imagens/banner-limpo-pc.png);
+    height: 750px;
+    background-image: url(../imagens/banner-red.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,26 +30,53 @@ body {
 
 
 .logo-gym{
-    margin-left: 200px;
-    margin-top: 8px;
+    margin-left: 15%;
+    margin-top: 18px;
 }
 
 .menu{
     display: flex;
-    margin: 0 200px 0 0;
-    padding: 10px;
+    padding: 0px 20px;
+    margin-right: 10%;
 }
 
 .container-menu{
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    background-color: rgba(245, 245, 220, 0.315);
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: rgb(235, 233, 233);
+}
+
+.container-menu a {
+    font-size: 1.15rem;
+    color: var(--maisClaro);
+    text-decoration: none;
 }
 
 .menu li {
-    margin-right: 10px;
+    margin-right: 25px;
     list-style: none;
-
 }
+
+
+.linha {
+    position: relative;
+    width: 55px;
+    height: 3px;
+    background-color: red;
+    top: 113%;
+    right: -9.5%;
+    transition: .13s;
+    display: none;
+}
+
+
+
+
 
 
 /* Mobile version */
