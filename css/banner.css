@@ -31,7 +31,7 @@ body {
 
 .logo-gym{
     margin-left: 15%;
-    margin-top: 18px;
+    margin-top: 10px;
 }
 
 .menu{
@@ -44,7 +44,6 @@ body {
     display: flex;
     justify-content: space-between;
     position: fixed;
-    background-color: rgba(245, 245, 220, 0.315);
     width: 100%;
     font-weight: 400;
     font-size: 1.15rem;
@@ -59,8 +58,23 @@ body {
 
 .menu li {
     margin-right: 25px;
+    cursor: pointer;
     list-style: none;
+    font-size: 1.25rem;
+    font-weight: 400;
+
 }
+
+.menu li:hover {
+    color: #BF0413;
+    transition: .2s ease;
+
+
+
+}
+
+
+
 
 
 .linha {
@@ -76,9 +90,39 @@ body {
 
 
 
+.logo-gym a {
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #BF0413;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.616);
+}
+
+[data-button="fecha"]{
+    display: none;
+}
 
 
 /* Mobile version */
+@media (max-width: 930px) {
+    .menu {
+        display: block;
+        background-color: #6b1111;
+        /* color: #ff636b; */
+        padding: 20px 200px;
+        margin: 0;
+        height: 100vh;
+    }
+    .menu li {
+        padding-top: 25px;
+    }
+    .linha {
+        display: none;
+    }
+    [data-button="fecha"]{
+        display: block;
+    }
+}
+
 @media (max-width: 500px) {
     .container-home{
         height: 702px;
