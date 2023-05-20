@@ -27,7 +27,7 @@ body {
 
 .logo-gym {
   margin-left: 15%;
-  margin-top: 10px;
+  margin-top: 45px;
 }
 
 .menu {
@@ -46,6 +46,7 @@ body {
   font-weight: 400;
   font-size: 1.15rem;
   color: rgb(235, 233, 233);
+  top: -25px;
 }
 
 .container-menu a {
@@ -58,7 +59,7 @@ body {
   margin-right: 25px;
   cursor: pointer;
   list-style: none;
-  font-size: 1.25rem;
+  font-size: 1.6rem !important;
   font-weight: 400;
 }
 
@@ -89,7 +90,7 @@ body {
 }
 .logo-gym a {
   font-weight: 800;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: #f72828;
   text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.616);
 }
