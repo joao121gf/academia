@@ -34,6 +34,39 @@ body {
   display: flex;
   padding: 0px 20px;
   margin-right: 10%;
+  animation: animaLeft 1s forwards;
+  z-index: -1;
+}
+
+.animaS{
+  animation: animaClose 1s forwards;
+
+}
+
+@keyframes animaClose{
+  from{
+    transform: translate3d(100px, 0, 0);
+  }
+  to{
+
+    transform: translate3d(-100px, 0, 0);
+  }
+}
+
+
+
+@keyframes animaLeft{
+  from{
+    transform: translate3d(-100px, 0, 0);
+  }
+  to{
+
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.menu .aberto{
+  animation: animaLeft 3s forwards;
 }
 
 .container-menu {
@@ -99,31 +132,32 @@ body {
 [data-button="fecha"] {
   display: none;
 }
-.linha{
-    width: 30%;
-    position: absolute;
-    height: 4px;
-    background-color: #0d0d0d;
-    display: none;
+.linha {
+  width: 30%;
+  position: absolute;
+  height: 4px;
+  background-color: #0d0d0d;
+  display: none;
 }
 
-.aaaa{
+.aaaa {
   position: absolute;
   z-index: -1;
+  left: 100px;
+  top: 13px;
 }
 
-.mobile-off{
+.mobile-off {
   display: none;
 }
 /* Mobile version */
 
 @media (max-width: 930px) {
-
-  .mobile-off.ativo{
+  .mobile-off.ativo {
     display: block;
     padding: 15px 100px;
   }
-  .linha{
+  .linha {
     display: block;
     /* position: fixed; */
     width: 60%;
@@ -144,7 +178,6 @@ body {
     font-size: 2.5rem;
   }
 
-
   .menu li img {
     display: inline-block;
     padding-right: 10px;
@@ -158,7 +191,6 @@ body {
     padding: 50px 20px 0 50px;
     margin: 0;
     height: 100vh;
-    
   }
   .menu li {
     padding-top: 40px;
@@ -176,19 +208,18 @@ body {
     align-items: center;
   }
   [data-button="fecha"]::before {
-    content: '';
+    content: "";
     display: inline-block;
     height: 5px;
     width: 30px;
     background-color: white;
     box-shadow: 0 15px white, 0 -15px white;
-
-}
-
-@media (max-width: 500px) {
-  .container-home {
-    height: 702px;
-    background-image: url(../imagens/fundo-mobile.jpg);
   }
-}
+
+  @media (max-width: 500px) {
+    .container-home {
+      height: 702px;
+      background-image: url(../imagens/fundo-mobile.jpg);
+    }
+  }
 }
