@@ -38,37 +38,6 @@ body {
   z-index: -1;
 }
 
-.animaS{
-  animation: animaClose 1s forwards;
-
-}
-
-@keyframes animaClose{
-  from{
-    transform: translate3d(100px, 0, 0);
-  }
-  to{
-
-    transform: translate3d(-100px, 0, 0);
-  }
-}
-
-
-
-@keyframes animaLeft{
-  from{
-    transform: translate3d(-100px, 0, 0);
-  }
-  to{
-
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.menu .aberto{
-  animation: animaLeft 3s forwards;
-}
-
 .container-menu {
   display: flex;
   justify-content: space-between;
@@ -129,9 +98,7 @@ body {
   display: none;
 }
 
-[data-button="fecha"] {
-  display: none;
-}
+
 .linha {
   width: 30%;
   position: absolute;
@@ -140,40 +107,65 @@ body {
   display: none;
 }
 
-.aaaa {
-  position: absolute;
-  z-index: -1;
-  left: 100px;
-  top: 13px;
-}
-
 .mobile-off {
   display: none;
 }
 /* Mobile version */
 
 @media (max-width: 930px) {
+
+  [data-button="fecha"] {
+    display: block !important;
+  }
+
+
+  
+
   .mobile-off.ativo {
     display: block;
     padding: 15px 100px;
   }
   .linha {
     display: block;
-    /* position: fixed; */
+    position: fixed;
     width: 60%;
     height: 2px;
     left: 52px;
-    top: 106px;
+    top: 83px;
     z-index: 20;
     background: aliceblue;
   }
   .logo-gym {
     display: none;
+    position: absolute;
+    left: 115px;
+    top: 200px;
   }
+
+  [data-mobile2]{
+    /* position: relative !important; */
+    top: 26px;
+    padding-left: 64px;
+  }
+
+  [data-mobile2]{
+    position: relative !important;
+    left: -62px !important;
+    top: -27px !important;
+  }
+
+  /* se conter ativo .logo-gym-mobile {
+    display: block; */
+
   .logo-gym-mobile {
     display: block;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
+    position: relative;
+    left: 100px;
+    top: 20px;
   }
+
+
   .logo-gym-mobile a {
     font-size: 2.5rem;
   }
@@ -191,22 +183,43 @@ body {
     padding: 50px 20px 0 50px;
     margin: 0;
     height: 100vh;
+    z-index: 400;
+    position: absolute;
+}
   }
+
+  .menu.active{
+    display: block;
+    animation: show-right .5s forwards;
+  }
+
+  @keyframes show-right {
+    from{
+      transform: translate3d(-100px, 0, 0);
+    }
+    to{
+      transform: translate3d(0, 0 ,0);
+    }
+  }
+
   .menu li {
     padding-top: 40px;
     font-size: 2rem;
   }
 
   [data-button="fecha"] {
-    display: flex;
+    display: none;
     position: absolute;
     left: 70%;
-    top: 6%;
+    top: 29%;
+
     padding: 15px;
     background-color: transparent;
     border: none;
     align-items: center;
+    z-index: 500;
   }
+
   [data-button="fecha"]::before {
     content: "";
     display: inline-block;
@@ -214,6 +227,14 @@ body {
     width: 30px;
     background-color: white;
     box-shadow: 0 15px white, 0 -15px white;
+    transition: transform 0.3s;
+    z-index: 500;
+
+  }
+  [data-button="fecha"].active::before {
+    transform: rotate(90deg);
+    z-index: 500;
+
   }
 
   @media (max-width: 500px) {
