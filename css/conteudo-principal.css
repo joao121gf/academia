@@ -1,3 +1,49 @@
-box{
-    background-color: antiquewhite;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+
+.container-home {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  margin: 0 auto;
+  width: 80%;
+  position: absolute;
+  top: 136px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.178);
+  display: flex;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: aliceblue;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1.7;
+  display: block;
+}
+
+.partir{
+    font-size: 12px;
+}
+
+.reais{
+    display: flex;
+}
+.reais > .numero{
+    font-size: 5.4rem;
+    color: #F72828;
+    position: relative;
+    left: 20px;
+
+}
+
+.mini{
+    font-size: 14px;
+    color: #F72828;
+    
 }
