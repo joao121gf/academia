@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+/* font-family: 'Oswald', sans-serif; */
 
 .container-home {
   width: 100%;
@@ -13,37 +15,58 @@
   margin: 0 auto;
   width: 80%;
   position: absolute;
-  top: 136px;
+  top: 119px;
   height: 200px;
-  background-color: rgba(0, 0, 0, 0.178);
+  /* background-color: rgba(0, 0, 0, 0.178); */
   display: flex;
   font-weight: 600;
   font-size: 1.5rem;
   color: aliceblue;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   line-height: 1.7;
   display: block;
 }
 
-.partir{
-    font-size: 12px;
-}
+.banner .mini{
+  font-weight: 300;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 28px;
 
-.reais{
-    display: flex;
-}
-.reais > .numero{
-    font-size: 5.4rem;
-    color: #F72828;
-    position: relative;
-    left: 20px;
+
 
 }
 
-.mini{
-    font-size: 14px;
-    color: #F72828;
-    
+.container-mini{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container-processo p {
+  font-weight: 700;
+  line-height: 1;
+  font-size: 2.4rem;
+  transform: scaleY(1.7);
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 3px 2px 7px black;
+
+}
+
+.container-processo{
+  margin-bottom: 63px;
+}
+
+.button-sign a {
+  text-decoration: none;
+  color: white;
+  background-color: #f83333;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.seta{
+  margin-top: 20px;
 }
