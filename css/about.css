@@ -22,6 +22,7 @@ body {
 
 .about-itens {
   text-align: center;
+  display: flex;
 }
 
 .about-itens p {
@@ -34,6 +35,11 @@ body {
   margin-bottom: 46px;
 }
 
+.about-itens .mobile {
+  display: none;
+}
+
+
 .about-itens a {
   text-decoration: none;
   color: white;
@@ -44,4 +50,18 @@ body {
   text-transform: uppercase;
   font-family: "Roboto Slab", serif;
   margin-top: 20px;
+}
+
+@media (max-width: 925px) {
+  .about-itens {
+    display: block;
+  }
+  .about-itens .mobile{
+    margin: 0 auto;
+    display: block;
+  }
+  .about-itens .pc{
+    display: none;
+  }
+
 }
