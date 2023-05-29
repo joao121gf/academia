@@ -17,7 +17,7 @@
   margin: 0 auto;
   width: 80%;
   position: absolute;
-  top: 162px;
+  top: 184px;
   height: 200px;
   /* background-color: rgba(0, 0, 0, 0.178); */
   display: flex;
@@ -62,9 +62,9 @@
   text-decoration: none;
   color: white;
   background-color: #f83333;
-  padding: 10px 20px;
+  padding: 12px 22px;
   border-radius: 20px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .seta {
@@ -78,7 +78,7 @@
 }
 @media (max-width: 780px) {
   .banner {
-    top: 110px;
+    top: 137px;
   }
   .banner .mini {
     font-size: 21px;
@@ -109,7 +109,7 @@
     font-size: 17px;
   }
   .banner {
-    top: 115px;
+    top: 194px;
   }
 }
 
@@ -119,10 +119,9 @@
   }
 }
 
-.seta img{
+.seta img {
   animation: levitar 1.5s ease-in-out infinite;
 }
-
 
 @keyframes levitar {
   0% {

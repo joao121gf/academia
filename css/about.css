@@ -23,15 +23,18 @@ body {
 .about-itens {
   text-align: center;
   display: flex;
+  justify-content: center;
+  margin-top: 121px;
 }
 
 .about-itens p {
   padding: 10px;
   color: aliceblue;
   font-family: "Roboto Slab", serif;
-  font-size: 1.3rem;
+  font-size: 1.55rem;
+  font-weight: 300;
   text-align: left;
-  line-height: 30px;
+  line-height: 50px;
   margin-bottom: 46px;
 }
 
@@ -39,29 +42,58 @@ body {
   display: none;
 }
 
-
 .about-itens a {
   text-decoration: none;
   color: white;
   background-color: #f83333;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-size: 1rem;
+  padding: 12px 22px;
+  border-radius: 29px;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-family: "Roboto Slab", serif;
   margin-top: 20px;
+  font-weight: 500;
+}
+
+.pc {
+  width: 500px;
+  height: auto;
+}
+
+.welcome {
+  width: 50%;
+  padding-top: 81px;
+}
+
+@media (max-width: 1300px) {
+  .about-itens p {
+    font-size: 2.4vw;
+  }
+  .pc {
+    width: 400px;
+  }
 }
 
 @media (max-width: 925px) {
   .about-itens {
     display: block;
+    margin-top: 67px;
   }
-  .about-itens .mobile{
+  .about-itens .mobile {
     margin: 0 auto;
     display: block;
+    width: 359px;
   }
-  .about-itens .pc{
+  .about-itens .pc {
     display: none;
   }
-
+  .about-itens p {
+    font-size: 1.2rem;
+    line-height: 35px;
+  }
+  .welcome {
+    margin: 0 auto;
+    width: 94%;
+    padding-top: 5px;
+  }
 }
