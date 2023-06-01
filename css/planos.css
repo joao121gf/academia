@@ -4,16 +4,17 @@
 .planes-container {
   width: 100%;
   height: 700px;
-  background-color: #5f1600;
+  background-color: #161616;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 150px 0px;
 }
 
 .box-planes {
-  background-color: #0d0d0d71;
+  background-color: rgba(255, 255, 255, 0);
   width: 91%;
-  height: 91%;
+  height: 100%;
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
@@ -28,6 +29,7 @@
   text-align: center;
   border-radius: 20px;
   position: relative;
+  padding-left: 20px;
 }
 
 .planos h2 {
@@ -40,16 +42,19 @@
   text-align: left;
   color: aliceblue;
   font-size: 1.5rem;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .preco {
   position: absolute;
   bottom: 36px;
-  left: 170px;
+  left: 123px;
 }
 
 .preco h3{
-  color: #bd2a2e;
+  color: aliceblue;
+  font-size: 2.5rem;
 }
 
 .preco a {
@@ -58,4 +63,9 @@
   padding: 10px 15px;
   background-color: #bd2a2e;
   border-radius: 20px;
+}
+
+
+.planos img {
+  padding-right: 25px;
 }
