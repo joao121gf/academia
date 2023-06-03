@@ -1,0 +1,86 @@
+.app-container{
+    height: 1000px;
+    width: 100%;
+    background-color: #0D0D0D;
+    position: absolute;
+}
+
+.app-box{
+    position: relative;
+    width: 80%;
+    height: 90%;
+    /* background-color: rgba(94, 5, 12, 0.13); */
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.fundo-circulo{
+    position: absolute;
+    background-color: #5f1012;
+    width: 550px;
+    height: 535px;
+    border-radius: 50px;
+    left: 5%;
+    top: 17%;
+}
+
+.fundo-circulo img {
+    position: absolute;
+    right: -22%;
+    top: -25%;
+}
+
+.down-app {
+    position: absolute;
+    right: 0%;
+    top: 12%;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+    width: 40%;
+    padding: 50px;
+}
+
+.down-app p{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-transform: initial;
+    font-size: 1.3rem;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.down-app h1, .down-app h2{
+    margin: 0px;
+}
+
+.down-app h2{
+    color: #bd2a2e;
+    font-size: 3.5rem;
+
+}
+
+.down-app h1{
+    font-size: 4.5rem;
+}
+
+.app-down{
+    display: inline-flex;
+}
+
+.play-iphone{
+    width: 77%;
+}
+
+.qr {
+    width: 42%;
+    left: -18%;
+    position: relative;
+    top: 8%;
+    border-radius: 15px;
+}
+
+.apps{
+    position: absolute;
+    left: 0%;
+}
