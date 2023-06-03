@@ -74,44 +74,50 @@
   .preco {
     left: 26%;
   }
+  .planes-container {
+    height: 2300px;
+  }
+  .planos p {
+    white-space: nowrap;
+  }
 }
 
-
 @media (max-width: 1250px) {
-  .box-planes{
+  .box-planes {
     display: block;
   }
   .planos {
     margin: 0 auto;
-    height: 67%;
+    height: 33%;
     padding: 0px 20%;
     padding-top: 20px;
     margin-bottom: 30px;
   }
-  .planos p{
+  .planos p {
     padding-left: 0px;
   }
   .preco {
     left: 42%;
+  }
+  .simples {
+    height: 29%;
+  }
 }
-
-}
-
 
 @media (max-width: 1250px) {
-  .preco h3, .preco a{
+  .preco h3,
+  .preco a {
     position: relative;
     left: -28%;
   }
-
 }
-
 
 @media (max-width: 850px) {
   .planos {
-    width: 45%;
+    width: 54%;
   }
-  .planos p {
-    white-space: nowrap;
-}
+  
+  .simples {
+    height: 29%;
+  }
 }
