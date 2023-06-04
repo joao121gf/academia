@@ -78,13 +78,21 @@
   }
   .planes-container {
     height: 2300px;
+    padding: 0px 0px;
   }
   .planos p {
     white-space: nowrap;
   }
+  .planos {
+    height: 33%;
+  }
 }
 
 @media (max-width: 1250px) {
+  .planes-container {
+    height: 2300px;
+    padding: 150px 0px;
+  }
   .box-planes {
     display: block;
   }
