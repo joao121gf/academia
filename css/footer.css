@@ -18,13 +18,13 @@
 
 
 .box-container h1{
-    font-size: 3.4rem;
+    font-size: 3.2rem;
     font-weight: 400;
     margin: 0px;
 }
 .box-container p {
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-bottom: 33px;
     margin-top: 38px;
 }
@@ -34,7 +34,7 @@
     margin: 0 auto;
 }
 .icones img{
-    width: 39px;
+    width: 35px;
     padding: 5px;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -57,22 +57,27 @@
 @media (max-width: 700px) {
     .box-container {
         width: 89%;
-        margin-top: 59px;
+        margin-top: 36px;
     }
     .parag {
         width: 88%;
     }
     .box-container h1 {
-        font-size: 2.4rem;
+        font-size: 1.6rem;
         font-weight: 400;
     }
     .box-container p {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         margin-bottom: 25px;
     }
     .footer-container{
         height: 100%;
     }
-    
+    .icones img{
+        width: 25px;
+    }
+    .icones p {
+        font-size: 0.8rem;
+    }
 }
 

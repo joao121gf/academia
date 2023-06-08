@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap");
 /* font-family: 'Oswald', sans-serif; */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
 .container-home {
   width: 100%;
   display: flex;
@@ -50,8 +54,11 @@
   font-size: 4rem;
   transform: scaleY(1.7);
   font-family: "Oswald", sans-serif;
-  text-shadow: 3px 2px 7px black;
+  text-shadow: 9px 3px 0px #1e1616;
   margin-bottom: 89px;
+  
+  
+
 }
 
 .container-processo {
