@@ -48,6 +48,11 @@ body {
   font-size: 1.15rem;
   color: rgb(235, 233, 233);
   top: -25px;
+      z-index: 6;
+}
+.nav{
+  position: relative !important;
+  z-index: 6 !important;
 }
 
 .container-menu a {
@@ -68,6 +73,19 @@ body {
   color: #f72828;
   transition: 0.2s ease;
 }
+
+.menu li a{
+  font-size: 1.6rem !important;
+  font-weight: 400;
+  color: aliceblue;
+}
+
+.menu li a:hover{
+  color: #f72828;
+  transition: 0.2s ease;
+
+}
+
 
 .linha {
   position: relative;

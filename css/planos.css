@@ -10,7 +10,7 @@
   align-items: center;
   padding: 150px 0px;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .box-planes {
@@ -64,8 +64,14 @@
   text-decoration: none;
   color: aliceblue;
   padding: 10px 15px;
-  background-color: #bd2a2e;
+  background-color: #f83333;
+
   border-radius: 20px;
+}
+
+.preco a:hover{
+  background-color: #881414;
+  transition: .2s;
 }
 
 .planos img {
