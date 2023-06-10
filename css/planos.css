@@ -97,7 +97,8 @@
 @media (max-width: 1250px) {
   .planes-container {
     height: 2300px;
-    padding: 150px 0px;
+    margin-top: 248px;
+    padding-top: 46px;
   }
   .box-planes {
     display: block;
@@ -131,9 +132,10 @@
 @media (max-width: 850px) {
   .planos {
     width: 54%;
+    height: 30%;
   }
   
   .simples {
-    height: 29%;
+    height: 25%;
   }
 }

@@ -4,7 +4,7 @@ export default function itensBanner() {
     
 
     function animaScroll(){
-      const windowMetade = window.innerHeight * 0.6
+      const windowMetade = window.innerHeight * 0.75
       sections.forEach((section) => {
         const sectionTop = section.getBoundingClientRect().top - windowMetade
         if (sectionTop < 0){

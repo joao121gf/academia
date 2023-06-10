@@ -164,5 +164,8 @@
     .fundo-circulo {
         left: 11vw;
     }
+    .app-container {
+      padding-top: 0px;
+    }
 }
 
