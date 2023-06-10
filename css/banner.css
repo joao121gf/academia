@@ -232,8 +232,7 @@ body {
   padding: 3px 0px;
   box-sizing: border-box;
   font-size: 2rem;
-  margin-bottom: 50px;
-
+  padding-bottom: 10px;
 }
 
 [data-button="fecha"] {
