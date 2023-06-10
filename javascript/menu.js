@@ -12,13 +12,6 @@ export default function menuFunc() {
         menu.classList.remove("active");
         menuButton.classList.remove("active");
       });
-
-      // if (menuButton.classList.contains('active') && menu.classList.contains('active')) {
-      //   gymMobile.classList.toggle('aberto')
-      // }
-
-      // gymMobile.classList.add('teste')
-  
     }
     menuButton.addEventListener("click", openMenu);
   });

@@ -7,7 +7,6 @@ export default function scrollSmooth() {
 
     btnContato.addEventListener('click', scrollSection)
     verPlanos.addEventListener('click', scrollSection)
-    console.log(verPlanos)
     
     function scrollSection(event){
       event.preventDefault()
