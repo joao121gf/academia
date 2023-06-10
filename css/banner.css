@@ -262,6 +262,10 @@ body {
   }
 }
 
+.oculto {
+  opacity: 0;
+}
+
 .sobe {
   opacity: 1;
   animation: moveTop 2s forwards;
